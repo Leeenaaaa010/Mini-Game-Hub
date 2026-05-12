@@ -1,39 +1,34 @@
-#include <iostream>
-#include <cassert>
 #include "../src/GameMenu.h"
-#include "../src/TicTacToe.h"
-#include "../src/SnakeGame.h"
+#include <cassert>
+#include <iostream>
 
-// TODO: Add tests for simple logic functions first
-
-void test_menu_initialization() {
-    GameMenu menu;
-
-    // Example test (depends on implementation later)
-    std::cout << "test_menu_initialization: TODO" << std::endl;
+void test_creation() {
+    std::cout << "Test 1: creation... ";
+    GameMenu m;
+    std::cout << "PASS\n";
 }
 
-void test_tictactoe_initial_state() {
-    TicTacToe game;
-
-    // TODO: Check board is empty / reset correctly
-    std::cout << "test_tictactoe_initial_state: TODO" << std::endl;
+void test_display() {
+    std::cout << "Test 2: display... ";
+    GameMenu m;
+    m.displayMenu();
+    std::cout << "PASS\n";
 }
 
-void test_snake_initial_state() {
-    SnakeGame game;
-
-    // TODO: Check score and gameOver state
-    std::cout << "test_snake_initial_state: TODO" << std::endl;
+void test_input() {
+    std::cout << "Test 3: input... ";
+    GameMenu m;
+    int c = m.getChoice();
+    assert(c >= 1 && c <= 3);
+    std::cout << "PASS\n";
 }
 
 int main() {
-    std::cout << "Running tests..." << std::endl;
+    std::cout << "Running tests...\n";
 
-    test_menu_initialization();
-    test_tictactoe_initial_state();
-    test_snake_initial_state();
+    test_creation();
+    test_display();
+    test_input();
 
-    std::cout << "\nAll tests completed." << std::endl;
-    return 0;
+    std::cout << "All tests passed.\n";
 }

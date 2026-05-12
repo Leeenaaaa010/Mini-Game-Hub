@@ -4,8 +4,8 @@
 #include <iostream>
 
 /**
- * GameMenu handles the main menu of the Mini Game Hub.
- * It lets the user choose which game to play.
+ GameMenu handles the main menu of the Mini Game Hub.
+ It lets the user choose whichgit game to play.
  */
 class GameMenu {
 private:
@@ -14,9 +14,8 @@ private:
 public:
     GameMenu();
 
-    void displayMenu() const;
-    int getChoice() const;
-    void setChoice(int c);
+    void displayMenu() const; //shows menu
+    int getChoice() const;  //read choice
 };
 
 #endif
