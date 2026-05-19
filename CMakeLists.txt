@@ -1,14 +1,23 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(MiniGameHub)
+project(Mini-Game-Hub)
 
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Enable testing
-enable_testing()
-
-# Create main executable
+# Main program
 add_executable(game_hub
     src/main.cpp
+    src/GameMenu.cpp
+    src/GameManager.cpp
+    src/TicTacToe.cpp
 )
+
+# Tests
+enable_testing()
+
+add_executable(tests
+    tests/test_main.cpp
+    src/GameMenu.cpp
+)
+
+add_test(NAME FeatureTests COMMAND tests)

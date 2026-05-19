@@ -12,3 +12,18 @@ A C++ console-based game hub that includes multiple mini-games such as Tic-Tac-T
 
 cmake -S . -B build
 cmake --build build
+
+
+-------------Updating--------------
+## Current Status
+
+**Implemented Features:**
+- GameMenu: displays menu and accepts user input
+
+**Stubbed Features:**
+- GameManager
+- TicTacToe
+- SnakeGame
+
+**Known Issues:**
+- None for current feature scope
