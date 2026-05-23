@@ -1,29 +1,25 @@
-# Mini-Game-Hub
-A C++ console-based game hub that includes multiple mini-games such as Tic-Tac-Toe and Snake.
+# Mini Game Hub
 
-## Features
-- Play Tic-Tac-Toe against another player
-- Play Snake game (single-player)
-- Menu system to choose different games
-- Track game results (win/loss or score)
-- Simple text-based interface
-
-## Building
-
-cmake -S . -B build
-cmake --build build
-
-
--------------Updating--------------
 ## Current Status
 
-**Implemented Features:**
-- GameMenu: displays menu and accepts user input
+### Implemented Features
 
-**Stubbed Features:**
-- GameManager
-- TicTacToe
-- SnakeGame
+* Main menu system
+* TicTacToe gameplay
+  * Player turns
+  * Move validation
+  * Win detection
+  * Tie detection
+  * Automated tests with CTest
 
-**Known Issues:**
-- None for current feature scope
+### Stubbed / Planned Features
+
+* Snake game
+
+## AI Assistance
+
+AI assistance was used for the TicTacToe gameplay feature, design refinement, and testing support.
+
+See:
+
+* `docs/ai_collaboration.md`

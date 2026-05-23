@@ -18,6 +18,7 @@ enable_testing()
 add_executable(tests
     tests/test_main.cpp
     src/GameMenu.cpp
+    src/TicTacToe.cpp
 )
 
 add_test(NAME FeatureTests COMMAND tests)
