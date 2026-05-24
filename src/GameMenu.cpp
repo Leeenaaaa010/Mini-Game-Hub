@@ -21,3 +21,4 @@ int GameMenu::getChoice() const {
     return input;
 }
 
+
