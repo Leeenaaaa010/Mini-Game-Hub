@@ -2,7 +2,6 @@
 #define TICTACTOE_H
 
 #include <tuple>
-using namespace std;
 
 class TicTacToe {
 private:
@@ -12,12 +11,15 @@ private:
 
 public:
     TicTacToe();
-
     void init();
-    void draw_board();
-    bool check_tie();
-    bool check_winner(int row, int col, char player);
-    tuple<int, int> input();
+    void drawBoard() const;
+    bool placeMove(int row, int col);
+    bool checkTie() const;
+    bool checkWinner(int row, int col, char player) const;
+    void switchPlayer();
+    char getCell(int row, int col) const;
+    char getCurrentPlayer() const;
+    std::tuple<int, int> input();
     void play();
 };
 

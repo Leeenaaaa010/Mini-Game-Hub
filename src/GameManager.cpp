@@ -2,13 +2,14 @@
 #include <iostream>
 
 GameManager::GameManager() {
-    // TODO: initialize game state
+    // Game manager setup can go here later
 }
 
 void GameManager::playTicTacToe() {
-    std::cout << "[GameManager::playTicTacToe] not yet implemented\n";
+    TicTacToe game;
+    game.play();
 }
 
 void GameManager::playSnake() {
-    std::cout << "[GameManager::playSnake] not yet implemented\n";
+    std::cout << "Snake game not yet implemented.\n";
 }
