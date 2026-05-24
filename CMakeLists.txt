@@ -10,6 +10,7 @@ add_executable(game_hub
     src/GameMenu.cpp
     src/GameManager.cpp
     src/TicTacToe.cpp
+    src/SnakeGame.cpp
 )
 
 # Tests
@@ -19,6 +20,7 @@ add_executable(tests
     tests/test_main.cpp
     src/GameMenu.cpp
     src/TicTacToe.cpp
+    src/SnakeGame.cpp
 )
 
 add_test(NAME FeatureTests COMMAND tests)

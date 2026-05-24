@@ -1,8 +1,10 @@
 #include "GameManager.h"
+#include "TicTacToe.h"
+#include "SnakeGame.h"
 #include <iostream>
 
 GameManager::GameManager() {
-    // Game manager setup can go here later
+    // GameManager acts as a central controller for launching games
 }
 
 void GameManager::playTicTacToe() {
@@ -11,5 +13,6 @@ void GameManager::playTicTacToe() {
 }
 
 void GameManager::playSnake() {
-    std::cout << "Snake game not yet implemented.\n";
+    SnakeGame game;
+    game.run();
 }

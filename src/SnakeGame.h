@@ -3,23 +3,45 @@
 
 #include <iostream>
 #include <vector>
+#include <utility>
 
-/**
- * Snake game logic (movement, score, collisions).
- */
 class SnakeGame {
 private:
-    int score;
     bool gameOver;
+
+    const int width = 20;
+    const int height = 20;
+
+    int headX;
+    int headY;
+
+    int foodX;
+    int foodY;
+
+    int score;
+
+    enum Direction {
+        STOP = 0,
+        LEFT,
+        RIGHT,
+        UP,
+        DOWN
+    };
+
+    Direction dir;
+
+    std::vector<std::pair<int, int>> tail;
+
+    void spawnFood();
 
 public:
     SnakeGame();
 
-    void startGame();
-    void update();
-    void display() const;
-    bool isGameOver() const;
-    int getScore() const;
+    void setup();
+    void draw();
+    void input();
+    void logic();
+    void run();
 };
 
 #endif
